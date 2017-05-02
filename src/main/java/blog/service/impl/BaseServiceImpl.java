@@ -2,6 +2,7 @@ package blog.service.impl;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -10,7 +11,9 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import blog.dao.BaseDao;
+import blog.dao.JournalDao;
 import blog.dao.UserDao;
+import blog.modal.Page;
 import blog.service.BaseService;
 
 /**
@@ -50,6 +53,8 @@ public class BaseServiceImpl<T>  implements BaseService<T>{
 	
 	@Resource
 	UserDao   userDao;
+	@Resource
+	JournalDao	journalDao;
 	
 	
 	
@@ -72,6 +77,10 @@ public class BaseServiceImpl<T>  implements BaseService<T>{
 	public T get(int id) {
 		
 		return baseDao.get(id);
+	}
+	@Override
+	public List<T> queryByPage(Page page) {
+		return baseDao.queryByPage(page);
 	}
 	
 	

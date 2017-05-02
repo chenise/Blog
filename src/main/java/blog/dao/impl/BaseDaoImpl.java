@@ -1,6 +1,7 @@
 package blog.dao.impl;
 
 import java.lang.reflect.ParameterizedType;
+import java.util.List;
 
 import javax.annotation.Resource;
 
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import blog.dao.BaseDao;
+import blog.modal.Page;
 
 /**
 * @author ChaosBear E-mail:576857622@qq.com
@@ -31,6 +33,24 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 	public BaseDaoImpl(){
 		ParameterizedType  type = (ParameterizedType) this.getClass().getGenericSuperclass();
 		clazz = (Class)type.getActualTypeArguments()[0];
+		
+	}
+	
+	
+	@Override
+	public List<T> queryByPage(Page page) {
+		String	className = clazz.getSimpleName();
+		String	hql	= "from  " + className.substring(0, 1).toLowerCase()+className.substring(1) + "  as c ";
+		List<T> resultList = getSession().createQuery(hql)
+                                         .setFirstResult(page.getPageIndex()-1)
+				                         .setMaxResults(page.getMaxResult())
+				                         .list();
+		page.setPageCount(
+				(int) Math.ceil(
+						((double)resultList.size()) / page.getMaxResult()
+						)
+				);
+		return resultList;
 	}
 	
 	
@@ -59,8 +79,19 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 
 	@Override
 	public T get(int id) {
-		getSession().get(clazz, id);
-		return null;
+		
+		return (T) getSession().get(clazz, id);
+	}
+	
+		
 	}
 
-}
+
+
+
+
+
+
+	
+
+

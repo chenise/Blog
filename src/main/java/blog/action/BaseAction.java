@@ -1,5 +1,6 @@
 package blog.action;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
@@ -9,6 +10,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import com.opensymphony.xwork2.ActionSupport;
+
+import blog.modal.Page;
+import blog.service.JournalService;
 import blog.service.UserService;
 
 /**
@@ -19,11 +23,14 @@ import blog.service.UserService;
 @Controller
 @Scope("prototype")
 public class BaseAction<T> extends ActionSupport implements SessionAware {
-
 	
+	List<T> 	resultList;
+	Page	page;
 	protected  Map<String, Object> session;
 	@Resource
 	protected	UserService userSevice;
+	@Resource
+	protected	JournalService jounalService;
 	
 	
 	@Override
