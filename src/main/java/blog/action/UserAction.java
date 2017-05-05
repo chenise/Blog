@@ -17,7 +17,7 @@ import blog.modal.User;
 public class UserAction extends BaseAction<User>{
 	private User user;
 
-	@Action(value="regist",className="userAction",results={@Result(name="success",location="")})
+	@Action(value="regist",className="userAction",results={@Result(name="success",location="/index.html")})
 	public void addUser(){
 		userSevice.save(user);
 	}

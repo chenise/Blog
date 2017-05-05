@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.ParentPackage;
+import org.apache.struts2.convention.annotation.Result;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
@@ -15,6 +19,8 @@ import blog.modal.User;
 * @version 创建时间：2017年4月22日 下午1:09:10
 * 
 */
+@ParentPackage("struts-default")
+@Namespace("/")
 @Controller
 @Scope("prototype")
 public class JournalAction extends BaseAction<Journal>{
@@ -32,7 +38,7 @@ public class JournalAction extends BaseAction<Journal>{
 	
 	
 	public String	readJournal(){
-		journal = jounalService.get(journal.getJournalId());
+		journal = jounalService.get(journal.getJournalId());   
 		
 		
 		return  "read";
@@ -43,11 +49,11 @@ public class JournalAction extends BaseAction<Journal>{
 	
 	
 	
-	
-	public	void	getJournalList(){
+	@Action(value="journallist",className="journalAction",results={@Result(name="success",type="freemarker",location="/Pages/journalList.ftl")})
+	public	String	getJournalList(){
 		resultList = jounalService.queryByPage(page);
 		
-		return ;
+		return SUCCESS;
 	}
 	
 

@@ -9,5 +9,6 @@ import blog.modal.User;
 */
 
 public interface UserDao extends BaseDao<User>{
+	String getPasswordByUsername(String name);
 
 }

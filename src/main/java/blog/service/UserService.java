@@ -9,5 +9,6 @@ import blog.modal.User;
 */
 
 public interface UserService  extends BaseService<User>{
+	Boolean checkPassword(String name,String password);
 
 }

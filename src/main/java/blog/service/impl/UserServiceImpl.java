@@ -13,4 +13,16 @@ import blog.service.UserService;
 @Service("userService")
 public class UserServiceImpl  extends BaseServiceImpl<User> implements UserService{
 
+	@Override
+	public Boolean checkPassword(String name, String password) {
+		if(userDao.getPasswordByUsername(name) != null){
+			if(password.equals(userDao.getPasswordByUsername(name))){
+				return true;
+			}
+			
+		}
+		return false;
+	}
+
+	
 }

@@ -25,8 +25,14 @@ import blog.service.UserService;
 public class BaseAction<T> extends ActionSupport implements SessionAware {
 	
 	List<T> 	resultList;
+	
+
+
+	@Resource
 	Page	page;
 	protected  Map<String, Object> session;
+	
+
 	@Resource
 	protected	UserService userSevice;
 	@Resource
@@ -37,7 +43,11 @@ public class BaseAction<T> extends ActionSupport implements SessionAware {
 	public void setSession(Map<String, Object> session) {
 		this.session = session;		
 	}
-
+	
+	
+	public List<T> getResultList() {
+		return resultList;
+	}
 
 	
 }
