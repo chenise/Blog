@@ -1,7 +1,5 @@
 package blog.action;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 
 import org.apache.struts2.convention.annotation.Action;
@@ -36,7 +34,7 @@ public class JournalAction extends BaseAction<Journal>{
 		jounalService.save(journal);
 	}
 	
-	
+	@Action(value="readjournal",className="journalAction",results={@Result(name="read",type="freemarker",location="/Pages/journal.ftl")})
 	public String	readJournal(){
 		journal = jounalService.get(journal.getJournalId());   
 		

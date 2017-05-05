@@ -19,7 +19,7 @@
     <#list resultList as journal>
       <tr>
         <td>
-          ${journal.title}
+        <a href="readjournal?journal.journalId=${journal.journalId}">${journal.title}</a>
         </td>
         <td>
           ${journal.publishTime}

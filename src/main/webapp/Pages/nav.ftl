@@ -14,6 +14,6 @@
           </li>
       </ul>
       <span class="user-info">
-        ${Session['USER_NAME']?default("Anonymous")}
+        ${(Session['USER_NAME'])?default("Anonymous")}
       </span>
 </div>

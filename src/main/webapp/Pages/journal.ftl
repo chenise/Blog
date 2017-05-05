@@ -1,10 +1,13 @@
 <#include "page.ftl">
-<@page page title="" js=[] css=[]>
+<@page title="${journal.title}" js=[] css=[]>
 
 
 <div class="journal">
   <div class="title">
-    <h1>${(journal.title)?defailt("no_title")}</h1>
+    <h1>${(journal.title)?default("no_title")}</h1>
+    <span>
+      作者:${(journal.author.name)?default("Anonymous")}
+    </span>
   </div>
   <div class="journal-content">
     ${(journal.content)?default("no_content")}
