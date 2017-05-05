@@ -1,0 +1,83 @@
+@import 'custom';
+@import 'mixins';
+@import 'nav';
+@import 'forms';
+@import 'tables';
+@import 'utilities/align';
+
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
+.body-bg-color{
+  background-color: #293a46;
+}
+.mybox{
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 30%;
+}
+
+.container{
+  @include make-container();
+
+
+}
+
+.row{
+  @include make-row;
+}
+
+.content{
+  @include make-col(8);
+  @include make-col-offset(2);
+  @include make-gutters;
+  background-color: #1bc98e;
+  @include border-radius();
+
+}
+.nav{
+  @include make-col-offset(3);
+}
+.nav-back{
+  background-color: #ffff;
+  margin-bottom: 4rem;
+
+}
+.form-wrap{
+  @extend .form-control;
+  width: 25%;
+
+
+}
+.form-text{
+  color:  #1bc98e;
+}
+.form-group > input{
+  width: 50%;
+
+}
+.xxx{
+  display: block;
+  margin: 25% 35%;
+  width: 30%;
+
+}
+.user-info{
+  float:right;
+}
+
+.journal{
+
+}
+
+.journal-content{
+
+}

@@ -1,0 +1,828 @@
+/* line 6, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* line 13, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-link {
+  display: block;
+  padding: 0.5em 1em;
+}
+/* line 21, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.nav-link:focus, .nav-link:hover {
+  text-decoration: none;
+}
+/* line 22, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-link.disabled {
+  color: #636c72;
+  cursor: not-allowed;
+}
+
+/* line 33, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+/* line 36, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+/* line 40, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+/* line 21, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: #eceeef #eceeef #ddd;
+}
+/* line 48, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-tabs .nav-link.disabled {
+  color: #636c72;
+  background-color: transparent;
+  border-color: transparent;
+}
+/* line 55, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #ddd #ddd #fff;
+}
+/* line 62, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+/* line 76, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-pills .nav-link {
+  border-radius: 0.25rem;
+}
+/* line 80, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+  color: #fff;
+  cursor: default;
+  background-color: #0275d8;
+}
+
+/* line 94, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* line 101, ../../node_modules/bootstrap/scss/_nav.scss */
+.nav-justified .nav-item {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+/* line 113, ../../node_modules/bootstrap/scss/_nav.scss */
+.tab-content > .tab-pane {
+  display: none;
+}
+/* line 116, ../../node_modules/bootstrap/scss/_nav.scss */
+.tab-content > .active {
+  display: block;
+}
+
+/* line 7, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control, .form-wrap {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+/* line 35, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control::-ms-expand, .form-wrap::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+/* line 46, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.form-control:focus, .form-wrap:focus {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #5cb3fd;
+  outline: none;
+}
+/* line 44, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control::placeholder, .form-wrap::placeholder {
+  color: #636c72;
+  opacity: 1;
+}
+/* line 55, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control:disabled, .form-wrap:disabled, .form-control[readonly], [readonly].form-wrap {
+  background-color: #eceeef;
+  opacity: 1;
+}
+/* line 62, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control:disabled, .form-wrap:disabled {
+  cursor: not-allowed;
+}
+
+/* line 68, ../../node_modules/bootstrap/scss/_forms.scss */
+select.form-control:not([size]):not([multiple]), select.form-wrap:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+/* line 73, ../../node_modules/bootstrap/scss/_forms.scss */
+select.form-control:focus::-ms-value, select.form-wrap:focus::-ms-value {
+  color: #464a4c;
+  background-color: #fff;
+}
+
+/* line 85, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-file,
+.form-control-range {
+  display: block;
+}
+
+/* line 97, ../../node_modules/bootstrap/scss/_forms.scss */
+.col-form-label {
+  padding-top: calc(0.5rem - 1px * 2);
+  padding-bottom: calc(0.5rem - 1px * 2);
+  margin-bottom: 0;
+}
+
+/* line 103, ../../node_modules/bootstrap/scss/_forms.scss */
+.col-form-label-lg {
+  padding-top: calc(0.75rem - 1px * 2);
+  padding-bottom: calc(0.75rem - 1px * 2);
+  font-size: 1.25rem;
+}
+
+/* line 109, ../../node_modules/bootstrap/scss/_forms.scss */
+.col-form-label-sm {
+  padding-top: calc(0.25rem - 1px * 2);
+  padding-bottom: calc(0.25rem - 1px * 2);
+  font-size: 0.875rem;
+}
+
+/* line 122, ../../node_modules/bootstrap/scss/_forms.scss */
+.col-form-legend {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* line 135, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-static {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+  line-height: 1.25;
+  border: solid transparent;
+  border-width: 1px 0;
+}
+/* line 143, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-static.form-control-sm, .form-control-static.form-control-lg {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 159, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+/* line 166, ../../node_modules/bootstrap/scss/_forms.scss */
+select.form-control-sm:not([size]):not([multiple]) {
+  height: 1.8125rem;
+}
+
+/* line 171, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+/* line 178, ../../node_modules/bootstrap/scss/_forms.scss */
+select.form-control-lg:not([size]):not([multiple]) {
+  height: 3.16667rem;
+}
+
+/* line 189, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* line 193, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+/* line 203, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+/* line 209, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check.disabled .form-check-label {
+  color: #636c72;
+  cursor: not-allowed;
+}
+
+/* line 216, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check-label {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/* line 222, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check-input {
+  position: absolute;
+  margin-top: 0.25rem;
+  margin-left: -1.25rem;
+}
+/* line 227, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check-input:only-child {
+  position: static;
+}
+
+/* line 233, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check-inline {
+  display: inline-block;
+}
+/* line 236, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check-inline .form-check-label {
+  vertical-align: middle;
+}
+/* line 240, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-check-inline + .form-check-inline {
+  margin-left: 0.75rem;
+}
+
+/* line 250, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-feedback {
+  margin-top: 0.25rem;
+}
+
+/* line 254, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-control-success,
+.form-control-warning,
+.form-control-danger {
+  padding-right: 2.25rem;
+  background-repeat: no-repeat;
+  background-position: center right 0.5625rem;
+  background-size: 1.125rem 1.125rem;
+}
+
+/* line 8, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-success .form-control-feedback,
+.has-success .form-control-label,
+.has-success .col-form-label,
+.has-success .form-check-label,
+.has-success .custom-control {
+  color: #5cb85c;
+}
+/* line 17, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-success .form-control, .has-success .form-wrap {
+  border-color: #5cb85c;
+}
+/* line 26, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-success .input-group-addon {
+  color: #5cb85c;
+  border-color: #5cb85c;
+  background-color: #eaf6ea;
+}
+/* line 267, ../../node_modules/bootstrap/scss/_forms.scss */
+.has-success .form-control-success {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%235cb85c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E");
+}
+
+/* line 8, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-warning .form-control-feedback,
+.has-warning .form-control-label,
+.has-warning .col-form-label,
+.has-warning .form-check-label,
+.has-warning .custom-control {
+  color: #f0ad4e;
+}
+/* line 17, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-warning .form-control, .has-warning .form-wrap {
+  border-color: #f0ad4e;
+}
+/* line 26, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-warning .input-group-addon {
+  color: #f0ad4e;
+  border-color: #f0ad4e;
+  background-color: white;
+}
+/* line 275, ../../node_modules/bootstrap/scss/_forms.scss */
+.has-warning .form-control-warning {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23f0ad4e' d='M4.4 5.324h-.8v-2.46h.8zm0 1.42h-.8V5.89h.8zM3.76.63L.04 7.075c-.115.2.016.425.26.426h7.397c.242 0 .372-.226.258-.426C6.726 4.924 5.47 2.79 4.253.63c-.113-.174-.39-.174-.494 0z'/%3E%3C/svg%3E");
+}
+
+/* line 8, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-danger .form-control-feedback,
+.has-danger .form-control-label,
+.has-danger .col-form-label,
+.has-danger .form-check-label,
+.has-danger .custom-control {
+  color: #d9534f;
+}
+/* line 17, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-danger .form-control, .has-danger .form-wrap {
+  border-color: #d9534f;
+}
+/* line 26, ../../node_modules/bootstrap/scss/mixins/_forms.scss */
+.has-danger .input-group-addon {
+  color: #d9534f;
+  border-color: #d9534f;
+  background-color: #fdf7f7;
+}
+/* line 283, ../../node_modules/bootstrap/scss/_forms.scss */
+.has-danger .form-control-danger {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
+}
+
+/* line 298, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+/* line 306, ../../node_modules/bootstrap/scss/_forms.scss */
+.form-inline .form-check {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  /* line 312, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  /* line 320, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  /* line 329, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-control, .form-inline .form-wrap {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  /* line 336, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-control-static {
+    display: inline-block;
+  }
+  /* line 340, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .input-group {
+    width: auto;
+  }
+  /* line 344, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  /* line 351, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* line 359, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-check-label {
+    padding-left: 0;
+  }
+  /* line 362, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .form-check-input {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0.25rem;
+    margin-left: 0;
+  }
+  /* line 370, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .custom-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  /* line 376, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .custom-control-indicator {
+    position: static;
+    display: inline-block;
+    margin-right: 0.25rem;
+    vertical-align: text-bottom;
+  }
+  /* line 384, ../../node_modules/bootstrap/scss/_forms.scss */
+  .form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+
+/* line 5, ../../node_modules/bootstrap/scss/_tables.scss */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+/* line 10, ../../node_modules/bootstrap/scss/_tables.scss */
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #eceeef;
+}
+/* line 17, ../../node_modules/bootstrap/scss/_tables.scss */
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #eceeef;
+}
+/* line 22, ../../node_modules/bootstrap/scss/_tables.scss */
+.table tbody + tbody {
+  border-top: 2px solid #eceeef;
+}
+/* line 26, ../../node_modules/bootstrap/scss/_tables.scss */
+.table .table {
+  background-color: #fff;
+}
+
+/* line 37, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+}
+
+/* line 48, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-bordered {
+  border: 1px solid #eceeef;
+}
+/* line 51, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #eceeef;
+}
+/* line 57, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+/* line 70, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* line 11, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* line 7, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-active,
+.table-active > th,
+.table-active > td {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* line 11, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.table-hover .table-active:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+/* line 23, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-hover .table-active:hover > td,
+.table-hover .table-active:hover > th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* line 7, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-success,
+.table-success > th,
+.table-success > td {
+  background-color: #dff0d8;
+}
+
+/* line 11, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.table-hover .table-success:hover {
+  background-color: #d0e9c6;
+}
+/* line 23, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+  background-color: #d0e9c6;
+}
+
+/* line 7, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-info,
+.table-info > th,
+.table-info > td {
+  background-color: #d9edf7;
+}
+
+/* line 11, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.table-hover .table-info:hover {
+  background-color: #c4e3f3;
+}
+/* line 23, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+  background-color: #c4e3f3;
+}
+
+/* line 7, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+  background-color: #fcf8e3;
+}
+
+/* line 11, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.table-hover .table-warning:hover {
+  background-color: #faf2cc;
+}
+/* line 23, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+  background-color: #faf2cc;
+}
+
+/* line 7, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+  background-color: #f2dede;
+}
+
+/* line 11, ../../node_modules/bootstrap/scss/mixins/_hover.scss */
+.table-hover .table-danger:hover {
+  background-color: #ebcccc;
+}
+/* line 23, ../../node_modules/bootstrap/scss/mixins/_table-row.scss */
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+  background-color: #ebcccc;
+}
+
+/* line 107, ../../node_modules/bootstrap/scss/_tables.scss */
+.thead-inverse th {
+  color: #fff;
+  background-color: #292b2c;
+}
+
+/* line 114, ../../node_modules/bootstrap/scss/_tables.scss */
+.thead-default th {
+  color: #464a4c;
+  background-color: #eceeef;
+}
+
+/* line 120, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-inverse {
+  color: #fff;
+  background-color: #292b2c;
+}
+/* line 124, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-inverse th,
+.table-inverse td,
+.table-inverse thead th {
+  border-color: #fff;
+}
+/* line 130, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-inverse.table-bordered {
+  border: 0;
+}
+
+/* line 143, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+/* line 150, ../../node_modules/bootstrap/scss/_tables.scss */
+.table-responsive.table-bordered {
+  border: 0;
+}
+
+/* line 1, ../../node_modules/bootstrap/scss/utilities/_align.scss */
+.align-baseline {
+  vertical-align: baseline !important;
+}
+
+/* line 2, ../../node_modules/bootstrap/scss/utilities/_align.scss */
+.align-top {
+  vertical-align: top !important;
+}
+
+/* line 3, ../../node_modules/bootstrap/scss/utilities/_align.scss */
+.align-middle {
+  vertical-align: middle !important;
+}
+
+/* line 4, ../../node_modules/bootstrap/scss/utilities/_align.scss */
+.align-bottom {
+  vertical-align: bottom !important;
+}
+
+/* line 5, ../../node_modules/bootstrap/scss/utilities/_align.scss */
+.align-text-bottom {
+  vertical-align: text-bottom !important;
+}
+
+/* line 6, ../../node_modules/bootstrap/scss/utilities/_align.scss */
+.align-text-top {
+  vertical-align: text-top !important;
+}
+
+/* line 9, ../../src/scss/layout.scss */
+html {
+  height: 100%;
+}
+
+/* line 12, ../../src/scss/layout.scss */
+body {
+  min-height: 100%;
+}
+
+/* line 17, ../../src/scss/layout.scss */
+.body-bg-color {
+  background-color: #293a46;
+}
+
+/* line 20, ../../src/scss/layout.scss */
+.mybox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 30%;
+}
+
+/* line 28, ../../src/scss/layout.scss */
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  /* line 28, ../../src/scss/layout.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 28, ../../src/scss/layout.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 28, ../../src/scss/layout.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 28, ../../src/scss/layout.scss */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 34, ../../src/scss/layout.scss */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 576px) {
+  /* line 34, ../../src/scss/layout.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 34, ../../src/scss/layout.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 34, ../../src/scss/layout.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 34, ../../src/scss/layout.scss */
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+/* line 38, ../../src/scss/layout.scss */
+.content {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  margin-left: 16.66667%;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #1bc98e;
+  border-radius: 0.25rem;
+}
+@media (min-width: 576px) {
+  /* line 38, ../../src/scss/layout.scss */
+  .content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 38, ../../src/scss/layout.scss */
+  .content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 38, ../../src/scss/layout.scss */
+  .content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 38, ../../src/scss/layout.scss */
+  .content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* line 46, ../../src/scss/layout.scss */
+.nav {
+  margin-left: 25%;
+}
+
+/* line 49, ../../src/scss/layout.scss */
+.nav-back {
+  background-color: #ffff;
+  margin-bottom: 4rem;
+}
+
+/* line 54, ../../src/scss/layout.scss */
+.form-wrap {
+  width: 25%;
+}
+
+/* line 60, ../../src/scss/layout.scss */
+.form-text {
+  color: #1bc98e;
+}
+
+/* line 63, ../../src/scss/layout.scss */
+.form-group > input {
+  width: 50%;
+}
+
+/* line 67, ../../src/scss/layout.scss */
+.xxx {
+  display: block;
+  margin: 25% 35%;
+  width: 30%;
+}
+
+/* line 73, ../../src/scss/layout.scss */
+.user-info {
+  float: right;
+}
